@@ -6,6 +6,14 @@
 [![scikit-learn](https://img.shields.io/badge/scikit--learn-1.6%2B-orange.svg)](https://scikit-learn.org/)
 [![XGBoost](https://img.shields.io/badge/xgboost-2.1%2B-green.svg)](https://xgboost.readthedocs.io/)
 [![License: MIT](https://img.shields.io/badge/license-MIT-yellow.svg)](LICENSE)
+[![Docs](https://img.shields.io/badge/docs-MkDocs%20Material-blueviolet.svg)](https://fedcal.github.io/ames-housing-price-pipeline/)
+
+## Repository GitHub
+
+**Nome del repository pubblico**: `ames-housing-price-pipeline`
+URL: <https://github.com/fedcal/ames-housing-price-pipeline>
+
+Il deploy del sito documentazione (MkDocs Material, mobile-first, SEO-ready) avviene automaticamente a ogni push su `main` tramite il workflow [`.github/workflows/docs.yml`](.github/workflows/docs.yml). Da abilitare in *Settings → Pages → Source = GitHub Actions* alla prima volta.
 
 ---
 
@@ -236,7 +244,11 @@ In ordine di valore aggiunto:
 
 ---
 
-## Licenza
+## Autore & licenza
+
+**Creazione di Federico Calò** — Project Work del percorso *Machine Learning Engineer* (DataMasters/Skiller, 2026).
+
+Per altri progetti, contatti e portfolio: <https://federicocalo.dev>.
 
 [MIT License](LICENSE) © 2026 Federico Calò.
 
