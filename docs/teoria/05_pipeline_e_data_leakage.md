@@ -1,4 +1,24 @@
+---
+layout: default
+title: Pipeline & data leakage
+parent: Teoria
+nav_order: 5
+math: mathjax
+description: >-
+  Pipeline scikit-learn: cosa sono, come prevengono il data leakage,
+  K-fold corretta, anti-pattern comuni e best practice di produzione.
+---
+
 # Pipeline sklearn e prevenzione del data leakage
+{: .no_toc }
+
+## Indice
+{: .no_toc .text-delta }
+
+1. TOC
+{:toc}
+
+---
 
 ## 1. Cos'è il data leakage
 

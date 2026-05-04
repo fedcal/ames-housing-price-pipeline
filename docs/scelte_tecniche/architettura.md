@@ -1,4 +1,23 @@
+---
+layout: default
+title: Architettura
+parent: Scelte tecniche
+nav_order: 1
+description: >-
+  Layout del progetto Ames Housing Pipeline: struttura dei moduli src/,
+  flusso dati end-to-end, CLI, dipendenze e separazione delle responsabilità.
+---
+
 # Architettura del progetto
+{: .no_toc }
+
+## Indice
+{: .no_toc .text-delta }
+
+1. TOC
+{:toc}
+
+---
 
 ## 1. Layout
 

@@ -6,14 +6,14 @@
 [![scikit-learn](https://img.shields.io/badge/scikit--learn-1.6%2B-orange.svg)](https://scikit-learn.org/)
 [![XGBoost](https://img.shields.io/badge/xgboost-2.1%2B-green.svg)](https://xgboost.readthedocs.io/)
 [![License: MIT](https://img.shields.io/badge/license-MIT-yellow.svg)](LICENSE)
-[![Docs](https://img.shields.io/badge/docs-MkDocs%20Material-blueviolet.svg)](https://fedcal.github.io/ames-housing-price-pipeline/)
+[![Docs](https://img.shields.io/badge/docs-Just%20the%20Docs-7253ed.svg)](https://fedcal.github.io/ames-housing-price-pipeline/)
 
 ## Repository GitHub
 
 **Nome del repository pubblico**: `ames-housing-price-pipeline`
 URL: <https://github.com/fedcal/ames-housing-price-pipeline>
 
-Il deploy del sito documentazione (MkDocs Material, mobile-first, SEO-ready) avviene automaticamente a ogni push su `main` tramite il workflow [`.github/workflows/docs.yml`](.github/workflows/docs.yml). Da abilitare in *Settings → Pages → Source = GitHub Actions* alla prima volta.
+La documentazione (sito statico mobile-first, SEO-ready, con sidebar gerarchica e search) è scritta in Markdown nella cartella [`docs/`](docs/) e viene servita automaticamente da **GitHub Pages** tramite il tema Jekyll [Just the Docs](https://just-the-docs.com/). Setup richiesto una volta sola: *Settings → Pages → Source = **Deploy from a branch**, Branch = `main` / `/docs`*. Ogni push su `main` aggiorna il sito.
 
 ---
 

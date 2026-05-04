@@ -1,4 +1,24 @@
+---
+layout: default
+title: Regolarizzazione
+parent: Teoria
+nav_order: 2
+math: mathjax
+description: >-
+  Ridge L2, Lasso L1 ed ElasticNet: cosa sono, quando usarle, trade-off
+  bias-variance e implementazione in scikit-learn.
+---
+
 # Regolarizzazione: Ridge, Lasso, ElasticNet
+{: .no_toc }
+
+## Indice
+{: .no_toc .text-delta }
+
+1. TOC
+{:toc}
+
+---
 
 ## 1. Il problema dell'OLS senza regolarizzazione
 

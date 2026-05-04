@@ -1,6 +1,28 @@
-# Scelte di modellazione: razionale
+---
+layout: default
+title: Scelte di modellazione
+parent: Scelte tecniche
+nav_order: 2
+math: mathjax
+description: >-
+  Razionale delle decisioni di modellazione del progetto Ames Housing:
+  selezione delle famiglie di modelli, target log, strategia di tuning,
+  gestione del rischio e trade-off espliciti.
+---
 
-Documenta le decisioni "perché così e non cosà" di livello modeling. Per dettagli teorici sulle tecniche, vedi `docs/teoria/`.
+# Scelte di modellazione: razionale
+{: .no_toc }
+
+Documenta le decisioni "perché così e non cosà" di livello modeling.
+Per dettagli teorici sulle tecniche, vedi la sezione [Teoria]({{ '/teoria/' | relative_url }}).
+
+## Indice
+{: .no_toc .text-delta }
+
+1. TOC
+{:toc}
+
+---
 
 ## 1. Famiglie di modelli scelte
 

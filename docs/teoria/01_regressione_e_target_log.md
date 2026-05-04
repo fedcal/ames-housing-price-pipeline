@@ -1,6 +1,26 @@
+---
+layout: default
+title: Regressione & target log
+parent: Teoria
+nav_order: 1
+math: mathjax
+description: >-
+  Regressione lineare OLS, skewness del target SalePrice, trasformazione
+  logaritmica con log1p e TransformedTargetRegressor di scikit-learn.
+---
+
 # Regressione lineare e trasformazione logaritmica del target
+{: .no_toc }
 
 > *"All models are wrong, but some are useful."* — George E. P. Box
+
+## Indice
+{: .no_toc .text-delta }
+
+1. TOC
+{:toc}
+
+---
 
 ## 1. Cosa è una regressione e perché è il punto di partenza
 

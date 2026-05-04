@@ -1,4 +1,24 @@
+---
+layout: default
+title: Metriche di regressione
+parent: Teoria
+nav_order: 4
+math: mathjax
+description: >-
+  RMSE, MAE, MAPE, R²: cosa misurano davvero, come leggerle, quando una
+  preferire all'altra in scenari reali di regressione.
+---
+
 # Metriche di valutazione per la regressione
+{: .no_toc }
+
+## Indice
+{: .no_toc .text-delta }
+
+1. TOC
+{:toc}
+
+---
 
 ## 1. Le quattro metriche standard
 

@@ -1,6 +1,26 @@
+---
+layout: default
+title: Random Forest & Boosting
+parent: Teoria
+nav_order: 3
+math: mathjax
+description: >-
+  Modelli tree-based per dati tabulari: Random Forest, Gradient Boosting,
+  XGBoost. Bagging vs boosting, iperparametri chiave, perché dominano su tabular.
+---
+
 # Random Forest e Gradient Boosting
+{: .no_toc }
 
 > *"In data, the easy money is in trees."* — Leo Breiman (parafrasato dalla comunità ML).
+
+## Indice
+{: .no_toc .text-delta }
+
+1. TOC
+{:toc}
+
+---
 
 ## 1. Perché i tree-based sono lo state-of-the-art su tabular
 
