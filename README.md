@@ -13,7 +13,7 @@
 **Nome del repository pubblico**: `ames-housing-price-pipeline`
 URL: <https://github.com/fedcal/ames-housing-price-pipeline>
 
-La documentazione (sito statico mobile-first, SEO-ready, con sidebar gerarchica e search) è scritta in Markdown nella cartella [`docs/`](docs/) e viene servita automaticamente da **GitHub Pages** tramite il tema Jekyll [Just the Docs](https://just-the-docs.com/). Setup richiesto una volta sola: *Settings → Pages → Source = **Deploy from a branch**, Branch = `main` / `/docs`*. Ogni push su `main` aggiorna il sito.
+La documentazione (sito statico mobile-first, SEO-ready, con sidebar gerarchica e search) è scritta in Markdown nella cartella [`docs/`](docs/) e viene buildata e pubblicata su **GitHub Pages** dal workflow [`.github/workflows/jekyll.yml`](.github/workflows/jekyll.yml) (Jekyll 4 + tema [Just the Docs](https://just-the-docs.com/)). **Setup richiesto una volta sola**: *Settings → Pages → Build and deployment → Source = **GitHub Actions***. Ogni push su `main` (sui file di `docs/`) avvia un nuovo deploy.
 
 ---
 
