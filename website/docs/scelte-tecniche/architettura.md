@@ -1,22 +1,8 @@
 ---
-layout: default
-title: Architettura
-parent: Scelte tecniche
-nav_order: 1
-description: >-
-  Layout del progetto Ames Housing Pipeline: struttura dei moduli src/,
-  flusso dati end-to-end, CLI, dipendenze e separazione delle responsabilità.
----
-
-# Architettura del progetto
-{: .no_toc }
-
-## Indice
-{: .no_toc .text-delta }
-
-1. TOC
-{:toc}
-
+sidebar_position: 1
+title: Architettura del progetto
+description: |
+  Layout del progetto Ames Housing Pipeline: struttura dei moduli src/, flusso dati end-to-end, CLI, dipendenze.
 ---
 
 ## 1. Layout
@@ -149,7 +135,7 @@ Modificare in `tuning.py` la stringa di `scoring=` (sklearn ne supporta 30+). Pe
 
 Il progetto non implementa una test suite completa — è un PW didattico, non production. Smoke test inclusi:
 
-- `ames-train --quick` esegue tutta la pipeline in <2 min con grid ridotte.
+- `ames-train --quick` esegue tutta la pipeline in &lt;2 min con grid ridotte.
 - Esecuzione dei 4 notebook end-to-end via `nbconvert --execute`.
 - Test di `predict_price()` su 4 input (base, lusso, economica, parziale).
 

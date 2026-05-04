@@ -1,28 +1,14 @@
 ---
-layout: default
-title: Scelte di modellazione
-parent: Scelte tecniche
-nav_order: 2
-math: mathjax
-description: >-
-  Razionale delle decisioni di modellazione del progetto Ames Housing:
-  selezione delle famiglie di modelli, target log, strategia di tuning,
-  gestione del rischio e trade-off espliciti.
+sidebar_position: 2
+title: "Scelte di modellazione: razionale"
+description: |
+  Razionale delle decisioni di modellazione: selezione delle famiglie di modelli, target log, strategia di tuning, gestione del rischio.
 ---
 
 # Scelte di modellazione: razionale
-{: .no_toc }
 
 Documenta le decisioni "perché così e non cosà" di livello modeling.
-Per dettagli teorici sulle tecniche, vedi la sezione [Teoria]({{ '/teoria/' | relative_url }}).
-
-## Indice
-{: .no_toc .text-delta }
-
-1. TOC
-{:toc}
-
----
+Per dettagli teorici sulle tecniche, vedi la sezione [Teoria](/docs/category/teoria).
 
 ## 1. Famiglie di modelli scelte
 
@@ -105,7 +91,7 @@ Non scegliamo "il modello con RMSE più basso punto e basta". Criteri composti:
 1. **Performance**: RMSE su holdout test set (non sul CV — già usato per il tuning).
 2. **Stabilità**: std delle metriche su K-fold.
 3. **Interpretabilità**: a parità di performance, preferiamo Ridge (coefficienti) a XGB (importance richiede SHAP per essere veramente leggibili).
-4. **Latenza inferenza**: Ridge < 1 ms; RF/XGB ~50 ms su 800 alberi. Per Ames non importa, ma è un fattore in produzione.
+4. **Latenza inferenza**: Ridge &lt; 1 ms; RF/XGB ~50 ms su 800 alberi. Per Ames non importa, ma è un fattore in produzione.
 5. **Tempo di training**: rilevante per il retraining periodico.
 
 Sul nostro test set, con tuning completo:
@@ -113,7 +99,7 @@ Sul nostro test set, con tuning completo:
 - Ridge   RMSE $18,509, R²=0.9461
 - RF      RMSE $20,825, R²=0.9318
 
-Differenza XGB vs Ridge ~1% RMSE — nel rumore di campionamento. **In produzione opterei per Ridge** per interpretabilità + velocità (< 1 ms di inferenza vs ~50 ms di XGBoost) + manutenibilità. La pipeline seleziona infatti Ridge come `best_model.joblib` perché ha il miglior CV (più conservativo del holdout). In leaderboard Kaggle si farebbe ensemble (`0.6 * XGB + 0.4 * Ridge`) per spremere ogni decimale.
+Differenza XGB vs Ridge ~1% RMSE — nel rumore di campionamento. **In produzione opterei per Ridge** per interpretabilità + velocità (&lt; 1 ms di inferenza vs ~50 ms di XGBoost) + manutenibilità. La pipeline seleziona infatti Ridge come `best_model.joblib` perché ha il miglior CV (più conservativo del holdout). In leaderboard Kaggle si farebbe ensemble (`0.6 * XGB + 0.4 * Ridge`) per spremere ogni decimale.
 
 ## 5. Cosa NON ho fatto (e perché)
 

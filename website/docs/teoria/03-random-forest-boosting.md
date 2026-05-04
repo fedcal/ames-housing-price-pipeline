@@ -1,26 +1,13 @@
 ---
-layout: default
-title: Random Forest & Boosting
-parent: Teoria
-nav_order: 3
-math: mathjax
-description: >-
-  Modelli tree-based per dati tabulari: Random Forest, Gradient Boosting,
-  XGBoost. Bagging vs boosting, iperparametri chiave, perché dominano su tabular.
+sidebar_position: 3
+title: Random Forest & Gradient Boosting
+description: |
+  Modelli tree-based per dati tabulari: Random Forest, Gradient Boosting, XGBoost. Bagging vs boosting, iperparametri chiave.
 ---
 
 # Random Forest e Gradient Boosting
-{: .no_toc }
 
 > *"In data, the easy money is in trees."* — Leo Breiman (parafrasato dalla comunità ML).
-
-## Indice
-{: .no_toc .text-delta }
-
-1. TOC
-{:toc}
-
----
 
 ## 1. Perché i tree-based sono lo state-of-the-art su tabular
 
@@ -132,7 +119,7 @@ Differenze nell'ordine del 5-10% — non drammatiche. Su Ames, **il preprocessin
 - **Dati ad alta dimensionalità sparsi** (es. testo, dummy esplose con $p \gg n$): Ridge/Lasso vincono.
 - **Estrapolazione richiesta**: i tree non escono dal range del training.
 - **Modelli interpretabili imposti da requisiti** (es. credit scoring soggetto a regulator): Ridge con coefficienti standardizzati è più trasparente.
-- **Vincoli di latenza estremi**: 800 alberi XGBoost in inferenza sono ~50 ms; un Ridge è < 1 ms.
+- **Vincoli di latenza estremi**: 800 alberi XGBoost in inferenza sono ~50 ms; un Ridge è &lt; 1 ms.
 
 ## 7. Riferimenti
 

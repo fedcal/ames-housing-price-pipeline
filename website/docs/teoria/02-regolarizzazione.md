@@ -1,23 +1,8 @@
 ---
-layout: default
-title: Regolarizzazione
-parent: Teoria
-nav_order: 2
-math: mathjax
-description: >-
-  Ridge L2, Lasso L1 ed ElasticNet: cosa sono, quando usarle, trade-off
-  bias-variance e implementazione in scikit-learn.
----
-
-# Regolarizzazione: Ridge, Lasso, ElasticNet
-{: .no_toc }
-
-## Indice
-{: .no_toc .text-delta }
-
-1. TOC
-{:toc}
-
+sidebar_position: 2
+title: "Regolarizzazione: Ridge, Lasso, ElasticNet"
+description: |
+  Ridge L2, Lasso L1 ed ElasticNet: cosa sono, quando usarle, trade-off bias-variance e implementazione in scikit-learn.
 ---
 
 ## 1. Il problema dell'OLS senza regolarizzazione
@@ -93,7 +78,7 @@ alpha_grid = [0.1, 1.0, 5.0, 10.0, 30.0, 100.0]
 Logiche per la scelta:
 
 - **Scala logaritmica**: $\alpha$ entra moltiplicato → step lineari (1, 2, 3) coprono solo un ordine di grandezza, mentre (0.1, 1, 10, 100) ne coprono tre.
-- **Range pratico**: con feature scalate ($\mu=0$, $\sigma=1$), valori di $\alpha$ < 0.01 sono quasi-OLS, > 100 schiacciano tutto. Il punto ottimo è quasi sempre fra 1 e 100.
+- **Range pratico**: con feature scalate ($\mu=0$, $\sigma=1$), valori di $\alpha$ &lt; 0.01 sono quasi-OLS, > 100 schiacciano tutto. Il punto ottimo è quasi sempre fra 1 e 100.
 
 In Ames lo `α=10` ottimo è coerente con la letteratura (Pedro Marcelino su Kaggle ottiene risultati simili).
 

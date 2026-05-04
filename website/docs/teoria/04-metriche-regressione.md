@@ -1,23 +1,8 @@
 ---
-layout: default
+sidebar_position: 4
 title: Metriche di regressione
-parent: Teoria
-nav_order: 4
-math: mathjax
-description: >-
-  RMSE, MAE, MAPE, R²: cosa misurano davvero, come leggerle, quando una
-  preferire all'altra in scenari reali di regressione.
----
-
-# Metriche di valutazione per la regressione
-{: .no_toc }
-
-## Indice
-{: .no_toc .text-delta }
-
-1. TOC
-{:toc}
-
+description: |
+  RMSE, MAE, MAPE, R²: cosa misurano davvero, come leggerle, quando preferire una all altra.
 ---
 
 ## 1. Le quattro metriche standard
@@ -54,7 +39,7 @@ $$
 - **Interpretazione**: frazione della varianza di $y$ spiegata dal modello.
   - $R^2 = 1$: predizione perfetta.
   - $R^2 = 0$: il modello non fa meglio che predire la media.
-  - $R^2 < 0$: il modello è peggiore della media (sì, è possibile).
+  - $R^2 &lt; 0$: il modello è peggiore della media (sì, è possibile).
 - Su Ames, R² > 0.90 è il benchmark per modelli ben tunati.
 
 ### 1.4 RMSE-log
@@ -126,7 +111,7 @@ Se le metriche CV e holdout divergono molto (es. CV RMSE 18k, holdout 25k), c'è
 - Train e test hanno distribuzioni diverse (drift).
 - Il tuning ha overfittato i fold (es. test set "incrociato" via leakage).
 
-In Ames, con split casuale stratificato e niente leakage, divergenza CV ↔ holdout < 5% è normale.
+In Ames, con split casuale stratificato e niente leakage, divergenza CV ↔ holdout &lt; 5% è normale.
 
 ## 5. Confronto fra modelli — significatività statistica
 
@@ -136,7 +121,7 @@ Approccio veloce: se l'intervallo di confidenza al 95% delle medie CV (≈ media
 
 Approccio rigoroso: **paired t-test** o **Wilcoxon signed-rank** sui RMSE per fold.
 
-In pratica, su Ames, differenze < 1% fra modelli sono nel rumore. Si sceglie il modello migliore considerando anche **interpretabilità**, **velocità di inferenza**, **manutenibilità**.
+In pratica, su Ames, differenze &lt; 1% fra modelli sono nel rumore. Si sceglie il modello migliore considerando anche **interpretabilità**, **velocità di inferenza**, **manutenibilità**.
 
 ## 6. Riferimenti
 
